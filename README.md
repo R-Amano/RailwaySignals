@@ -19,11 +19,138 @@ Railway Signal HUD (.mcpack) : [Download](https://drive.usercontent.google.com/u
 それはほとんどの場合、コマンドが有効なクリエイティブワールドでの使用になるでしょう。  
 
 ### 仕様
-このパックは/titleコマンドを改造しています。  
-それではリソースパックを適用させ、コマンドが有効なワールドに入り、チャットラインに `/title @p title ra_signal_a1` と入力してみましょう！  
+それではリソースパックを適用させ、コマンドが有効なワールドに入り、チャットラインに
+```
+/title @p title ra_signal_a1
+```
+と入力してみましょう！  
   
 ![Minecraftの画像](https://raw.githubusercontent.com/R-Amano/RailwaySignals/main/Guide/rs01.png)  
 
 おめでとうございます！ 画面左に赤の信号機が出現しました。  
   
 ![Minecraftの画像](https://raw.githubusercontent.com/R-Amano/RailwaySignals/main/Guide/rs02.png)  
+
+このパックは/titleコマンドを改造しています。  
+もちろん、`/title @p title Hello World` と入力すると、通常のタイトルも出現します。  
+これらはtitleコマンドで特別な文字を入力した時だけ表示されます。  
+信号機は27種類ほどあります！ すべてのコマンドを確認しましょう。  
+
+### コマンド一覧
+※セレクターは信号を表示させたい任意のプレイヤーで構いません。  
+
+![信号の画像](https://raw.githubusercontent.com/R-Amano/RailwaySignals/main/Railway%20Signal/textures/signals/ra_signal_a1.png)  
+```
+/title @p title ra_signal_a1
+```
+![信号の画像](https://raw.githubusercontent.com/R-Amano/RailwaySignals/main/Railway%20Signal/textures/signals/ra_signal_a2.png)  
+```
+/title @p title ra_signal_a2
+```
+![信号の画像](https://raw.githubusercontent.com/R-Amano/RailwaySignals/main/Railway%20Signal/textures/signals/ra_signal_a3.png)  
+```
+/title @p title ra_signal_a3
+```
+-----
+![信号の画像](https://raw.githubusercontent.com/R-Amano/RailwaySignals/main/Railway%20Signal/textures/signals/ra_signal_b1.png)  
+```
+/title @p title ra_signal_b1
+```
+![信号の画像](https://raw.githubusercontent.com/R-Amano/RailwaySignals/main/Railway%20Signal/textures/signals/ra_signal_b2.png)  
+```
+/title @p title ra_signal_b2
+```
+![信号の画像](https://raw.githubusercontent.com/R-Amano/RailwaySignals/main/Railway%20Signal/textures/signals/ra_signal_b3.png)  
+```
+/title @p title ra_signal_b3
+```
+-----
+![信号の画像](https://raw.githubusercontent.com/R-Amano/RailwaySignals/main/Railway%20Signal/textures/signals/ra_signal_c1.png)  
+```
+/title @p title ra_signal_c1
+```
+![信号の画像](https://raw.githubusercontent.com/R-Amano/RailwaySignals/main/Railway%20Signal/textures/signals/ra_signal_c2.png)  
+```
+/title @p title ra_signal_c2
+```
+![信号の画像](https://raw.githubusercontent.com/R-Amano/RailwaySignals/main/Railway%20Signal/textures/signals/ra_signal_c3.png)  
+```
+/title @p title ra_signal_c3
+```
+![信号の画像](https://raw.githubusercontent.com/R-Amano/RailwaySignals/main/Railway%20Signal/textures/signals/ra_signal_c4.png)  
+```
+/title @p title ra_signal_c4
+```
+![信号の画像](https://raw.githubusercontent.com/R-Amano/RailwaySignals/main/Railway%20Signal/textures/signals/ra_signal_c5.png)  
+```
+/title @p title ra_signal_c5
+```
+-----
+![信号の画像](https://raw.githubusercontent.com/R-Amano/RailwaySignals/main/Railway%20Signal/textures/signals/ra_signal_d1.png)  
+```
+/title @p title ra_signal_d1
+```
+![信号の画像](https://raw.githubusercontent.com/R-Amano/RailwaySignals/main/Railway%20Signal/textures/signals/ra_signal_d2.png)  
+```
+/title @p title ra_signal_d2
+```
+![信号の画像](https://raw.githubusercontent.com/R-Amano/RailwaySignals/main/Railway%20Signal/textures/signals/ra_signal_d3.png)  
+```
+/title @p title ra_signal_d3
+```
+![信号の画像](https://raw.githubusercontent.com/R-Amano/RailwaySignals/main/Railway%20Signal/textures/signals/ra_signal_d4.png)  
+```
+/title @p title ra_signal_d4
+```
+![信号の画像](https://raw.githubusercontent.com/R-Amano/RailwaySignals/main/Railway%20Signal/textures/signals/ra_signal_d5.png)  
+```
+/title @p title ra_signal_d5
+```
+![信号の画像](https://raw.githubusercontent.com/R-Amano/RailwaySignals/main/Railway%20Signal/textures/signals/ra_signal_d6.png)  
+```
+/title @p title ra_signal_d6
+```
+![信号の画像](https://raw.githubusercontent.com/R-Amano/RailwaySignals/main/Railway%20Signal/textures/signals/ra_signal_d7.png)  
+```
+/title @p title ra_signal_d7
+```
+![信号の画像](https://raw.githubusercontent.com/R-Amano/RailwaySignals/main/Railway%20Signal/textures/signals/ra_signal_d8.png)  
+```
+/title @p title ra_signal_d8
+```
+![信号の画像](https://raw.githubusercontent.com/R-Amano/RailwaySignals/main/Railway%20Signal/textures/signals/ra_signal_d9.png)  
+```
+/title @p title ra_signal_d9
+```
+-----
+![信号の画像](https://raw.githubusercontent.com/R-Amano/RailwaySignals/main/Railway%20Signal/textures/signals/ra_signal_e1.png)  
+```
+/title @p title ra_signal_e1
+```
+![信号の画像](https://raw.githubusercontent.com/R-Amano/RailwaySignals/main/Railway%20Signal/textures/signals/ra_signal_e2.png)  
+```
+/title @p title ra_signal_e2
+```
+![信号の画像](https://raw.githubusercontent.com/R-Amano/RailwaySignals/main/Railway%20Signal/textures/signals/ra_signal_e3.png)  
+```
+/title @p title ra_signal_e3
+```
+![信号の画像](https://raw.githubusercontent.com/R-Amano/RailwaySignals/main/Railway%20Signal/textures/signals/ra_signal_e4.png)  
+```
+/title @p title ra_signal_e4
+```
+![信号の画像](https://raw.githubusercontent.com/R-Amano/RailwaySignals/main/Railway%20Signal/textures/signals/ra_signal_e5.png)  
+```
+/title @p title ra_signal_e5
+```
+
+
+
+
+
+
+
+
+
+
+
