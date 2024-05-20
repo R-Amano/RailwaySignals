@@ -1,0 +1,24 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "RSsample",
+		"description": "Railway Signal HUD for BE : Sample Signal\nby 天乃涼介 at CC0 フリー素材",
+		"uuid": "311CC805-BA3F-2941-582D-7CB96A86A802",//変更必須
+		"version": [1,0,0],
+		"min_engine_version": [1,20,0]
+	},
+	"modules": [
+		{
+			"description": "",
+			"type": "resources",
+			"uuid": "5CC567B8-21AD-A483-86E0-4FABC863C528",//変更必須
+			"version": [1,0,0]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "6D26738C-3944-977D-7EFC-ADA14ABA4BD8",//変更しない(前提パックと紐づけ)
+			"version": [1, 0, 0]
+		}
+	]
+}
