@@ -6,4 +6,12 @@ Railway Signal HUD は、Minecraft統合版に鉄道信号を画面左に表示�
 
 ## ライセンス
 フォルダによって分かれています。  
-「RailwaySignal」
+「Railway Signal」フォルダ内の画像含めたデータは[MIT LICENSE](LICENSE)です。  
+後述する「Sample Signal」フォルダ内のデータはクリエイティブ・コモンズ「CC0」とし、制限なく使用できます。  
+
+## DOWNLOAD 
+Railway Signal HUD (.mcpack) : [Download](https://drive.usercontent.google.com/u/0/uc?id=1sJNOVIsNqOQ72T2ZtVfTtUBaHi4dlKZF&export=download)  
+
+## さあ、使ってみよう！
+このパックはリソースパックであるため、パックが有効なすべての場所で使用できます。  
+しかし、パックの機能を使用するには、ワールドをパックの為に少し改造しなければなりません。  
