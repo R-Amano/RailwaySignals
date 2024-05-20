@@ -160,19 +160,84 @@ Railway Signal HUD (.mcpack) : [Download](https://drive.usercontent.google.com/u
   
 出発現示や場内の現示を明示するのに役立つでしょう。  
 
+-----
 ## 信号機を追加する
 信号機はこれだけではありません！  
-皆さんの手で好きな信号機を作って公開することができます！  
-その手順を紹介しましょう。  
+皆さんの手で好きな信号機を作って公開することができます。  
+その手順を紹介..！と行きたいですが、改造するにあたってリソースパックの構造などをある程度知っている事が前提になります。
 
 ### サンプルパック
 サンプルパックは、皆さんが好きに信号や表示を追加させて共有できる特別なデータです。  
 これは「Railway Signal HUD」を前提パックとし、加えて追加適用させることで動作させられるでしょう。  
 どのように信号を追加するか、まずは [サンプルパック](https://drive.usercontent.google.com/u/0/uc?id=12RPP0pogLpgTLQbjW5zuBMI8uNSgbJs0&export=download) を受け取り、「Railway Signal HUD」と一緒に適用させてみましょう！  
+  
+![Minecraftの画像](https://raw.githubusercontent.com/R-Amano/RailwaySignals/main/Guide/rs07.png)  
 
+ワールド内では次のようにコマンド入力すると、サンプルパックの信号機を表示させられます。
+```
+/title @p title ra_signal_sample1
+```
+```
+/title @p title ra_signal_sample2
+```
+おや？ 信号機ではなさそうですね。  
+あなたのアイデア次第で、色々な使い方ができるでしょう！  
 
+### 改造する
+それではこのサンプルパックの中身をみてみましょう。  
+サンプルパックは非常にシンプル！マニフェストと特別なディレクトリに収められた２つの写真だけがあります。  
+まずはmanifestを編集しましょう！  
 
+  
+#### manifestの編集
+編集する箇所は簡単！ headerの名前と説明、それから二箇所のuuidを変更してくれればOK。  
+更に下のuuidはメインのリソースパックである「Railway Signal HUD」のuuidで、これを前提パックとして使用するよ。  
+```
+{
+	"format_version": 2,
+	"header": {
+		"name": "RSsample",
+		"description": "Railway Signal HUD for BE : Sample Signal\nby 天乃涼介 at CC0 フリー素材",
+		"uuid": "311CC805-BA3F-2941-582D-7CB96A86A802",//変更必須
+		"version": [1,0,0],
+		"min_engine_version": [1,20,0]
+	},
+	"modules": [
+		{
+			"description": "",
+			"type": "resources",
+			"uuid": "5CC567B8-21AD-A483-86E0-4FABC863C528",//変更必須
+			"version": [1,0,0]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "6D26738C-3944-977D-7EFC-ADA14ABA4BD8",//変更しない(前提パックと紐づけ)
+			"version": [1, 0, 0]
+		}
+	]
+}
+```
 
+#### 信号機の追加
+信号機の画像は textures/signals/ 内にあります。  
+それ以外はありません！  
+そしてあなたがここで用意するのは信号の画像と好きな名前です。  
+
+![ファイルの画像](https://raw.githubusercontent.com/R-Amano/RailwaySignals/main/Guide/rs08.png)  
+##### 画像について
+画像のサイズは好きなサイズで問題ありません。  
+マイクラっぽさを残すなら低画質\(おおよそ32*32\)がおすすめかも。
+##### ネーミング
+画像を用意できたら名付けに入ります。そしてここが一番大事な所になります。  
+名前は必ず `ra_signal_<あなたの決めた文字列>.png` として下さい。  
+この画像名は、titleコマンドで入力したものと同じになります！  
+そしてそれは、他の人と被らない文字とするべきでしょう。  
+
+-----
+
+一通りの説明はこんな所でしょう。  
+それではぜひ「Railway Signal HUD」を楽しんで下さい！  
 
 
 
