@@ -144,9 +144,31 @@ Railway Signal HUD (.mcpack) : [Download](https://drive.usercontent.google.com/u
 /title @p title ra_signal_e5
 ```
 
+### サブタイトル
+信号機はサブタイトルもサポートしています！  
+例えば、
+```
+/title @p subtitle 出発
+```
+とサブタイトルを送信し、次に
+```
+/title @p title ra_signal_a1
+```
+とタイトルを送信すると、信号機の下にサブタイトルの文字を表示させられます。  
 
+![Minecraftの画像](https://raw.githubusercontent.com/R-Amano/RailwaySignals/main/Guide/rs05.png)  
+  
+出発現示や場内の現示を明示するのに役立つでしょう。  
 
+## 信号機を追加する
+信号機はこれだけではありません！  
+皆さんの手で好きな信号機を作って公開することができます！  
+その手順を紹介しましょう。  
 
+### サンプルパック
+サンプルパックは、皆さんが好きに信号や表示を追加させて共有できる特別なデータです。  
+これは「Railway Signal HUD」を前提パックとし、加えて追加適用させることで動作させられるでしょう。  
+どのように信号を追加するか、まずは [サンプルパック](https://drive.usercontent.google.com/u/0/uc?id=12RPP0pogLpgTLQbjW5zuBMI8uNSgbJs0&export=download) を受け取り、「Railway Signal HUD」と一緒に適用させてみましょう！  
 
 
 
