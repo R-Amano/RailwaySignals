@@ -1,0 +1,18 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "RArasi10R",
+		"description": "Railway Signal HUD for BE\n(c) 天乃涼介 at MIT LICENSE",
+		"uuid": "6D26738C-3944-977D-7EFC-ADA14ABA4BD8",
+		"version": [1,0,0],
+		"min_engine_version": [1,20,0]
+	},
+	"modules": [
+		{
+			"description": "",
+			"type": "resources",
+			"uuid": "D96BB936-30C2-65BA-E8A2-EF9EF76D05CA",
+			"version": [1,0,0]
+		}
+	]
+}

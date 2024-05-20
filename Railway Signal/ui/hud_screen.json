@@ -1,0 +1,153 @@
+{
+  "namespace": "hud",
+
+  "hud_title_text": {
+    "$ra_signal_key": "ra_signal_",
+    "bindings": [
+      {
+        "binding_name": "#hud_title_text_string"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(#hud_title_text_string - $ra_signal_key = #hud_title_text_string)",
+        "target_property_name": "#visible"
+      },
+      {
+        "source_property_name": "#hud_title_text_string",
+        "target_property_name": "#text"
+      }
+    ]
+  },
+
+  "ra_signal_title_panel":{
+    "type": "panel",
+    "layer": 2,
+    "$ra_signal_key": "ra_signal_",
+    "controls": [
+      {
+        "ra_signal_image":{ //by Bedrock Wiki @ https://wiki.bedrock.dev/json-ui/best-practices.html
+          "type": "image",
+          "layer": 3,
+          "anchor_from": "left_middle",
+          "anchor_to": "bottom_middle",
+          "size": [70,70],
+          "offset":[40,-4],
+          "texture": "#texture",
+          "anims": [
+            "@anim_ra_signal_image"
+          ],
+          "bindings": [
+            {
+                "binding_name": "#hud_title_text_string"
+            },
+            {
+                "binding_type": "view",
+                "source_property_name": "('textures/signals/' + #hud_title_text_string)",
+                "target_property_name": "#texture"
+            }
+          ] 
+        }
+      },
+      {
+        "ra_signal_subtitle_bg":{
+          "type": "image",
+          "layer": 4,
+          "anchor_from": "left_middle",
+          "anchor_to": "top_middle",
+          "size": [ "100%c + 2px", "100%c + 2px" ],
+          "offset":[40,0],
+          "texture": "textures/ui/hud_tip_text_background",
+          "alpha":0.5,
+          "anims": [
+            "@anim_ra_signal_subtitle_bg"
+          ],
+          "controls": [
+            {
+              "ra_signal_subtitle_label":{
+                "type": "label",
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "max_size":[70,"default"],
+                "text": "#text",
+                "anims": [
+                  "@anim_ra_signal_subtitle_label"
+                ],
+                "bindings": [
+                  {
+                    "binding_name": "#hud_subtitle_text_string",
+                    "binding_name_override": "#text",
+                    "binding_type": "global"
+                  }
+                ]
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_name": "#hud_subtitle_text_string"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not(#hud_subtitle_text_string = ''))",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "binding_name": "#hud_title_text_string"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(not(#hud_title_text_string - $ra_signal_key = #hud_title_text_string))",
+        "target_property_name": "#visible"
+      }
+    ]
+  },
+
+  "anim_ra_signal_image": {
+    "anim_type": "wait", "duration": 7, "next": "@anim_ra_signal_image2"
+  },
+  "anim_ra_signal_image2": {
+    "anim_type": "alpha", "easing": "in_quart", "duration": 3, "from": 1, "to": 0
+  },
+
+  "anim_ra_signal_subtitle_bg": {
+    "anim_type": "wait", "duration": 7, "next": "@anim_ra_signal_subtitle_bg2"
+  },
+  "anim_ra_signal_subtitle_bg2": {
+    "anim_type": "alpha", "easing": "in_quart", "duration": 3, "from": 0.5, "to": 0
+  },
+
+  "anim_ra_signal_subtitle_label": {
+    "anim_type": "wait", "duration": 7, "next": "@anim_ra_signal_subtitle_label2"
+  },
+  "anim_ra_signal_subtitle_label2": {
+    "anim_type": "alpha", "easing": "in_quart", "duration": 3, "from": 1, "to": 0
+  },
+
+  "root_panel": {
+    "modifications":[
+      {
+        "array_name":"controls",
+        "operation":"insert_front",
+        "value":[
+          {
+            "ra_signal_title_factory":{
+              "type": "panel",
+              "layer": 1,
+              "factory": {
+                "name": "hud_title_text_factory",
+                "control_ids": {
+                  "hud_title_text": "@ra_signal_title_panel"
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
