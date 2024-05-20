@@ -7,7 +7,9 @@ Railway Signal HUD は、Minecraft統合版に鉄道信号を画面左に表示�
 
 ## 参考資料
 このパックを作成するにあたって、特別なアイデアをくれたBedrock Wiki様に最大の感謝をします✨️  
-https://wiki.bedrock.dev/json-ui/best-practices.html 
+https://wiki.bedrock.dev/json-ui/best-practices.html  
+また、信号機の種類をWikipedia様にて確認しています。  
+https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E9%89%84%E9%81%93%E4%BF%A1%E5%8F%B7  
 
 ## ライセンス
 フォルダによって分かれています。  
